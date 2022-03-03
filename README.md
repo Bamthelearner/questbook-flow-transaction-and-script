@@ -13,13 +13,13 @@ If you'd like to consume this (incredible) content in a video format, you can ch
 
 Transactions and scripts are both essential to any blockchain application. Without them, we wouldn't be able to interact with the blockchain at all. On Flow, they are even more special because *they are both separate from the contract.* If you have coded on Ethereum before, you know that transactions are just functions you call inside the contract itself (if you don't know that, that's okay!). However, on Flow, transactions and scripts act as a sort of "middleman" between the person interacting with the blockchain and the smart contracts. It looks something like this:
 
-<img src="../images/sctsworkflow.png" alt="drawing" size="400" />
+<img src="https://raw.githubusercontent.com/emerald-dao/questbook-flow-transaction-and-script/blob/main/learn_src/learn_assets/sctsworkflow.png" alt="drawing" size="400" />
 
 ## Transactions vs. Scripts
 
 Now, what is the difference between transactions and scripts? Well, the biggest difference is that transactions **modify the data** on the blockchain, and scripts **view the data** on the blockchain. Here is a helpful diagram to understand the differences:
 
-<img src="../images/transactionvscript.png" alt="drawing" size="400" />
+<img src="https://raw.githubusercontent.com/emerald-dao/questbook-flow-transaction-and-script/blob/main/learn_src/learn_assets/transactionvscript.png" alt="drawing" size="400" />
 
 As you can see, scripts also do not cost any money (phew!). Transactions on the other hand cost "gas," which is a form of payment needed to change the data on the blockchain.
 
@@ -54,7 +54,7 @@ If you click "Execute," you should see "Hello, World!" in the console. Great! Wh
 
 Now, let's do an example of a transaction. On the left hand side, under "Transaction Templates," click on the "Transaction" tab. Go ahead and delete everything in that tab so it looks like this:
 
-<img src="../images/emptytx.PNG" alt="drawing" size="400" />
+<img src="https://raw.githubusercontent.com/emerald-dao/questbook-flow-transaction-and-script/blob/main/learn_src/learn_assets/emptytx.PNG" alt="drawing" size="400" />
 
 Okay, cool. Now, we want to modify the data on the blockchain. In order to do that, let's set up our transaction. We can do that by putting this code into the page:
 
@@ -127,7 +127,7 @@ transaction(myNewGreeting: String) {
 
 Now, on the right side, you'll see a prompt pop up. We can type in our new greeting into the little box! Because the Flow playground is a little glitchy, you have to surround your new greeting with quotes, like this: "Goodbye, World!". So let's type that in like so:
 
-<img src="../images/txgoodbye.PNG" alt="drawing" size="400" />
+<img src="https://raw.githubusercontent.com/emerald-dao/questbook-flow-transaction-and-script/blob/main/learn_src/learn_assets/txgoodbye.PNG" alt="drawing" size="400" />
 
 Notice also that we can "sign" this transaction from any account. Since it doesn't really matter (we aren't accessing data in an account), feel free to choose any account you wish.
 
@@ -137,7 +137,10 @@ That wraps things up for today.
 
 ## Quests
 
-Please answer in the language of your choice.
+
+You can do these quests on your own, and submit them for review in the <a href="https://discord.gg/emeraldcity" target="_blank">Emerald City Discord</a> where we will review and give feedback on all your responses.
+
+You cam always answer in the language of your choice.
 
 1. Explain why we wouldn't call `changeGreeting` in a script.
 
